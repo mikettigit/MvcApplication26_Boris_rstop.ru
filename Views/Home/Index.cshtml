@@ -1,0 +1,518 @@
+﻿@using MvcApplication3.Models;
+@using MvcApplication20.Models
+
+@{
+    ViewBag.Title = "Index";
+    List<Post> Projects = (List<Post>)ViewData["Projects"];
+}
+
+<div id="wrapper">
+    <div class="page_content">
+        <div class="container">
+            <div class="row row-fluid">
+                <div class="col-sm-12">
+                    <div class="vc_column-inner ">
+                        <div class="wpb_wrapper">
+                            <style>
+                                #rev_slider_1_1 .zeus.tparrows.tp-rightarrow:before {
+                                    content: "\25B6" !important;
+                                }
+                                #rev_slider_1_1 .zeus.tparrows.tp-leftarrow:before {
+                                    content: "\25C0" !important;
+                                }
+                            </style>
+                            <div class="wpb_revslider_element wpb_content_element">
+                                <div id="rev_slider_1_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-source="gallery" style="background:transparent;padding:0px;">
+                                    <div id="rev_slider_1_1" class="rev_slider fullscreenbanner" style="display:none;" data-version="5.4.6.4">
+                                        <ul>
+                                            <li data-index="rs-1" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="/wp-content/uploads/revslider/main-slider/revslider-top1-100x50.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                                                <img src="/wp-content/uploads/revslider/main-slider/revslider-top1.jpg" alt="" title="Home" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="15" class="rev-slidebg" data-no-retina>
+                                                <div class="tp-caption  " id="slide-1-layer-1" data-x="['left','left','center','center']" data-hoffset="['12','32','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-88','-90','-86','-116']" data-fontsize="['80','80','60','40']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-responsive="off" data-frames='[{"delay":10,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":1500,"frame":"999","to":"y:[175%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5; white-space: nowrap; font-size: 80px; line-height: 100px; font-weight: 900; color: rgba(255,255,255,1);">
+                                                    <style>
+                                                        @@media screen and (max-width: 768px) {
+                                                            #revtitle1, #revtitle2 {
+                                                                font-size: 30px !important;
+                                                            }
+                                                        }
+                                                        @@media screen and (max-width: 414px) {
+                                                            #revtitle1, #revtitle2 {
+                                                                font-size: 24px !important;
+                                                            }
+                                                        }
+                                                        @@media screen and (max-width: 375px) {
+                                                            #revtitle1, #revtitle2 {
+                                                                font-size: 20px !important;
+                                                            }
+                                                        }
+                                                    </style>
+                                                    <div class="revtitle" id="revtitle1" style=" font-family: 'Arial'; font-size: 54px;">ДИАГНОСТИКА И РЕМОНТ</div>
+                                                </div>
+                                                <div class="tp-caption  " id="slide-1-layer-3" data-x="['left','left','center','center']" data-hoffset="['22','44','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['24','22','14','4']" data-fontsize="['18','18','16','16']" data-lineheight="['28','28','26','26']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-responsive="off" data-frames='[{"delay":10,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":1500,"frame":"999","to":"y:[175%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 6; white-space: nowrap; font-size: 18px; line-height: 28px; font-weight: 400; color: rgba(255,255,255,1);">
+                                                    <div class="revslide_desc" style="font-family:Arial;">всех типов строительной и спецтехники
+                                                        @*<br class="br_for_mobile">навесного оборудования, гидравлических систем и электрики*@
+                                                    </div>
+                                                </div>
+                                                <div class="tp-caption  " id="slide-1-layer-4" data-x="['left','left','center','center']" data-hoffset="['24','48','0','0']" data-y="['top','top','top','top']" data-voffset="['530','474','559','460']" data-fontsize="['20','20','14','20']" data-lineheight="['22','22','24','22']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-responsive="off" data-frames='[{"delay":10,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":1500,"frame":"999","to":"y:[175%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: rgba(255,255,255,1);">
+                                                    <div class="rev-button" style="font-family:Arial;"><a href="/services" style="color:white;">Наши услуги</a></div>
+                                                </div>
+                                            </li>
+                                            <li data-index="rs-2" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="/wp-content/uploads/revslider/main-slider/services-top-bg-100x50.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                                                <img src="/wp-content/uploads/revslider/main-slider/services-top-bg.jpg" alt="" title="Home" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="15" class="rev-slidebg" data-no-retina>
+                                                <div class="tp-caption  " id="slide-2-layer-1" data-x="['left','left','center','center']" data-hoffset="['10','32','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-87','-90','-86','-116']" data-fontsize="['80','80','60','40']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-responsive="off" data-frames='[{"delay":10,"speed":1500,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":1500,"frame":"999","to":"y:[175%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5; white-space: nowrap; font-size: 80px; line-height: 100px; font-weight: 900; color: rgba(255,255,255,1);">
+                                                    <div class="revtitle" id="revtitle2"  style=" font-family: 'Arial'; font-size: 54px;">ЗАПЧАСТИ И РАСХОДНИКИ</div>
+                                                </div>
+                                                <div class="tp-caption  " id="slide-2-layer-3" data-x="['left','left','center','center']" data-hoffset="['22','44','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['24','22','14','4']" data-fontsize="['18','18','16','16']" data-lineheight="['28','28','26','26']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-responsive="off" data-frames='[{"delay":10,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":1500,"frame":"999","to":"y:[175%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 6; white-space: nowrap; font-size: 18px; line-height: 28px; font-weight: 400; color: rgba(255,255,255,1);">
+                                                    <div class="revslide_desc" style="font-family:Arial;">
+                                                        в наличии и на заказ
+                                                        @*<br class="br_for_mobile">Contact us to start a project today.*@
+                                                    </div>
+                                                </div>
+                                                <div class="tp-caption  " id="slide-2-layer-4" data-x="['left','left','center','center']" data-hoffset="['24','48','0','0']" data-y="['top','top','top','top']" data-voffset="['530','474','559','460']" data-fontsize="['20','20','14','20']" data-lineheight="['22','22','24','22']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-responsive="off" data-frames='[{"delay":10,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":1500,"frame":"999","to":"y:[175%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]' data-textalign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: rgba(255,255,255,1);">
+                                                    <div class="rev-button" style="font-family:Arial;"><a href="/services" style="color:white;">Подробнее</a></div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-fluid vc_custom_1484444368035">
+                <div class="col-sm-12">
+                    <div class="vc_column-inner ">
+                        <div class="wpb_wrapper">
+                            <h2 class="construction-custom-heading fancy_heading_top" style="font-size: 15px;color: #212121;font-weight: 100;text-transform: uppercase; font-family:Arial;">
+                                12 лет на рынке Санкт-Петербурга
+                            </h2>
+                            <h2 class="construction-custom-heading fancy_heading_bottom" style="font-size: 50px; color: #212121; text-transform: uppercase; font-family: Arial;">
+                                Наши услуги
+                            </h2>
+                            <div class="services-grid row">
+                                <div class="col-sm-3 col-xs-12">
+                                    <figure class="service-figure">
+                                        <div class="services-grid-thumbnail">
+                                            <img width="1620" height="1080" src="/wp-content/uploads/2017/01/diagnostics.jpg" class="attachment-construction_crop_450_300 size-construction_crop_450_300 wp-post-image" alt="" sizes="(max-width: 1620px) 100vw, 1620px" />
+                                        </div>
+                                        <figcaption>
+                                            <div class="services-grid-title"><a href="/diagnostics/" style="font-family:Arial; font-size:16px;">Диагностика</a></div>
+                                            <div class="services-grid-link"><a href="/diagnostics/" style="font-family:Arial;">Подробнее...</a>
+                                                <i class="icon-arrow-right"></i>
+                                            </div>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="services-grid-excerpt">
+                                        <p>
+                                            <ul style="list-style-type:disc;">
+                                                <li style="list-style-type:disc;">Компьютерная диагностика</li>
+                                                <li style="list-style-type:disc;">Диагностика и ремонт гидравлического оборудования</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-xs-12">
+                                    <figure class="service-figure">
+                                        <div class="services-grid-thumbnail">
+                                            <img width="1920" height="1280" src="/wp-content/uploads/2017/01/repair.jpg" class="attachment-construction_crop_450_300 size-construction_crop_450_300 wp-post-image" alt="" sizes="(max-width: 1920px) 100vw, 1920px" />
+                                        </div>
+                                        <figcaption>
+                                            <div class="services-grid-title"><a href="/repair/" style="font-family: Arial; font-size: 16px;">Ремонт</a></div>
+                                            <div class="services-grid-link"><a href="/repair/" style="font-family:Arial;">Подробнее...</a><i class="icon-arrow-right"></i></div>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="services-grid-excerpt">
+                                        <p>
+                                            <ul style="list-style-type:disc;">
+                                                <li style="list-style-type:disc;">Ремонт электрооборудования</li>
+                                                <li style="list-style-type:disc;">Капитальный и текущий ремонт двигателя</li>
+                                                <li style="list-style-type:disc;">
+                                                    Ремонт мостов
+                                                </li>
+                                                <li style="list-style-type:disc;">
+                                                    Ремонт коробок передач
+                                                </li>
+                                                <li style="list-style-type:disc;">Ремонт и замена ходовой части гусеничной техники</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-xs-12">
+                                    <figure class="service-figure">
+                                        <div class="services-grid-thumbnail"><img width="1920" height="1280" src="/wp-content/uploads/2017/01/maintenance.jpg" class="attachment-construction_crop_450_300 size-construction_crop_450_300 wp-post-image" alt="" sizes="(max-width: 1920px) 100vw, 1920px" /></div>
+                                        <figcaption>
+                                            <div class="services-grid-title"><a href="/maintenance/" style="font-family: Arial; font-size: 16px;">Обслуживание</a></div>
+                                            <div class="services-grid-link"><a href="/maintenance/" style="font-family:Arial;">Подробнее...</a><i class="icon-arrow-right"></i></div>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="services-grid-excerpt">
+                                        <p>
+                                            <ul style="list-style-type:disc;">
+                                                <li style="list-style-type:disc;">Техобслуживание (ТО)</li>
+                                                <li style="list-style-type:disc;">Сварочные работы любой сложности</li>
+                                                <li style="list-style-type:disc;">
+                                                    Изготовление пальцев/втулок
+                                                </li>
+                                                <li style="list-style-type:disc;">
+                                                    Восстановление отверстий
+                                                </li>
+                                                <li style="list-style-type:disc;">Восстановление ковшей</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-3 col-xs-12">
+                                    <figure class="service-figure">
+                                        <div class="services-grid-thumbnail"><img width="1920" height="1280" src="/wp-content/uploads/2017/01/spares.jpg" class="attachment-construction_crop_450_300 size-construction_crop_450_300 wp-post-image" alt="" sizes="(max-width: 1920px) 100vw, 1920px" /></div>
+                                        <figcaption>
+                                            <div class="services-grid-title"><a href="/spares/" style="font-family: Arial; font-size: 16px;">Запчасти</a></div>
+                                            <div class="services-grid-link"><a href="/spares/" style="font-family:Arial;">Подробнее...</a><i class="icon-arrow-right"></i></div>
+                                        </figcaption>
+                                    </figure>
+                                    <div class="services-grid-excerpt">
+                                        <p>
+                                            <ul style="list-style-type:disc;">
+                                                <li style="list-style-type: disc; margin-bottom: 3px;">
+                                                    JCB
+                                                </li>
+                                                <li style="list-style-type: disc; margin-bottom: 3px;">
+                                                    CATERPILLAR
+                                                </li>
+                                                <li style="list-style-type: disc; margin-bottom: 3px;">
+                                                    TEREX
+                                                </li>
+                                                <li style="list-style-type: disc; margin-bottom: 3px;">
+                                                    KOMATSU
+                                                </li>
+                                                <li style="list-style-type: disc; margin-bottom: 3px;">
+                                                    VOLVO
+                                                </li>
+                                                <li style="list-style-type: disc; margin-bottom: 3px;">
+                                                    MANITOU
+                                                </li>
+                                                <li style="list-style-type: disc; margin-bottom: 3px;">
+                                                    HITACHI
+                                                </li>
+                                                <li style="list-style-type: disc; margin-bottom: 3px;">
+                                                    LIEBHERR
+                                                </li>
+                                                <li style="list-style-type: disc; margin-bottom: 3px;">
+                                                    NEW HOLLAND
+                                                </li>
+                                                <li style="list-style-type: disc; margin-bottom: 3px;">
+                                                    JOHN DEER
+                                                </li>
+                                                <li style="list-style-type: disc; margin-bottom: 3px;">
+                                                    DOOSAN
+                                                </li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-parallax="1.5" class="row row-fluid vc_custom_1504489012277 row-has-fill vc_general vc_parallax vc_parallax-content-moving" style="background-image: url(/wp-content/uploads/2017/01/home-bg-middle.jpg) !important;">
+                <div class="col-sm-12">
+                    <div class="vc_column-inner ">
+                        <div class="wpb_wrapper">
+                            <h2 class="construction-custom-heading fancy_heading_top" style="font-size: 40px; color: #ffffff; font-weight: 100; text-align: right; text-transform: uppercase; font-family: Arial;">Выездная</h2>
+                            <h2 class="construction-custom-heading fancy_heading_bottom" style="font-size: 80px;color: #ffffff;text-align: right;text-transform: uppercase; font-family:Arial;">ремонтная бригада</h2>
+                            <div class="row vc_inner row-fluid">
+                                <div class="col-sm-2">
+                                    <div class="vc_column-inner ">
+                                        <div class="wpb_wrapper"></div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="vc_column-inner ">
+                                        <div class="wpb_wrapper"></div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="vc_column-inner ">
+                                        <div class="wpb_wrapper"></div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="vc_column-inner ">
+                                        <div class="wpb_wrapper">
+                                            <div class="number-countup CountUpID_5afe6db2b7be7">
+                                                <div class="number-countup-value" style="text-align: center;color: #fff;" id="CountUp_5afe6db2b7bbb"></div>
+                                                <div class="number-countup-title" style="text-align: center; color: rgba(255,255,255,0.8); font-family: Arial;">Клиента</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="vc_column-inner ">
+                                        <div class="wpb_wrapper">
+                                            <div class="number-countup CountUpID_5afe6db2b7ea8">
+                                                <div class="number-countup-value" style="text-align: center;color: #fff;" id="CountUp_5afe6db2b7e69"></div>
+                                                <div class="number-countup-title" style="text-align: center;color: rgba(255,255,255,0.8); font-family: Arial;">мастеров</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-2">
+                                    <div class="vc_column-inner ">
+                                        <div class="wpb_wrapper">
+                                            <div class="number-countup CountUpID_5afe6db2b8156">
+                                                <div class="number-countup-value" style="text-align: center;color: #fff;" id="CountUp_5afe6db2b8119"></div>
+                                                <div class="number-countup-title" style="text-align: center; color: rgba(255,255,255,0.8); font-family: Arial;">Работ завершено</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="vc_row-full-width vc_clearfix"></div>
+            <div class="row row-fluid vc_custom_1484444396695">
+                <div class="col-sm-12">
+                    <div class="vc_column-inner ">
+                        <div class="wpb_wrapper">
+                            <h2 class="construction-custom-heading fancy_heading_top" style="font-size: 15px; color: #212121; font-weight: 100; text-transform: uppercase; font-family: Arial;">Сложные задачи</h2>
+                            <h2 class="construction-custom-heading fancy_heading_bottom" style="font-size: 50px;color: #212121;text-transform: uppercase;font-family:Arial;">Недавние работы</h2>
+                            @foreach (Post project in Projects)
+                            {
+                                @Html.Raw(project.Description.Replace("href=\"#\"", "href=\"/Projects/Item/" + project.Id + "\""))
+                            }
+                            @*<div class="projects row">
+                                <div class="col-sm-4 col-xs-12">
+                                    <div class="project">
+                                        <figure class="projects-figure">
+                                            <div class="project-img"><img width="600" height="400" src="/wp-content/uploads/2017/01/PROJECT1.jpg" class="attachment-construction-image-600x400-cropped size-construction-image-600x400-cropped wp-post-image" alt="" /></div>
+                                            <figcaption>
+                                                <div class="project-category">
+                                                    <a href="/Projects/1" rel="tag">Гатчина</a>
+                                                </div> 
+                                                <a class="project-title" href="/Projects/1" style="font-family:Arial;">Ремонт крепления штифта</a>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-xs-12">
+                                    <div class="project">
+                                        <figure class="projects-figure">
+                                            <div class="project-img"><img width="600" height="400" src="/wp-content/uploads/2017/01/project2.jpg" class="attachment-construction-image-600x400-cropped size-construction-image-600x400-cropped wp-post-image" alt="" sizes="(max-width: 600px) 100vw, 600px" /></div>
+                                            <figcaption>
+                                                <div class="project-category">
+                                                    <a href="/Projects/2" rel="tag">Янино</a>
+                                                </div>
+                                                <a class="project-title" href="/Projects/2" style="font-family:Arial;">Сварочные работы</a>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 col-xs-12">
+                                    <div class="project">
+                                        <figure class="projects-figure">
+                                            <div class="project-img"><img width="600" height="400" src="/wp-content/uploads/2017/01/project3.jpg" class="attachment-construction-image-600x400-cropped size-construction-image-600x400-cropped wp-post-image" alt="" sizes="(max-width: 600px) 100vw, 600px" /></div>
+                                            <figcaption>
+                                                <div class="project-category">
+                                                    <a href="/Projects/3" rel="tag">Низино</a>
+                                                </div>
+                                                <a class="project-title" href="/Projects/3" style="font-family:Arial;">Обслуживание гидросистемы</a>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>*@
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-parallax="1.5" class="row row-fluid vc_custom_1504488980206 row-has-fill vc_general vc_parallax vc_parallax-content-moving" style="background-image: url(/wp-content/uploads/2017/01/home-bg-btm.jpg) !important;">
+                <div class="col-sm-12">
+                    <div class="vc_column-inner ">
+                        <div class="wpb_wrapper">
+                            <div class="row vc_inner row-fluid">
+                                <div class="col-lg-2"></div>
+                                <div class="col-sm-6 col-lg-4">
+                                    <div class="vc_column-inner ">
+                                        <div class="wpb_wrapper">
+                                            <h2 class="construction-custom-heading fancy_heading_top" style="font-size: 15px;color: #ffffff;font-weight: 100;text-transform: uppercase; font-family:Arial;">Отправьте сообщение</h2>
+                                            <h2 class="construction-custom-heading fancy_heading_bottom" style="font-size: 40px; color: #ffffff; text-transform: uppercase; font-family: Arial;">Ответим сегодня</h2>
+                                            <div class="create-space" id="CreateSpace_5afe6db2bb134"></div>
+                                            <div class="wpb_text_column wpb_content_element ">
+                                                <div class="wpb_wrapper">
+                                                    <p><span style="color: rgba(255,255,255,0.75); font-family:Arial;">Опишите задачу как можно подробнее, не забудьте указать адрес или GPS-координаты или просто оставьте отзыв о нашей работе.</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-4 vc_col-has-fill">
+                                    <div class="vc_column-inner vc_custom_1484098106206">
+                                        <div class="wpb_wrapper">
+                                            <div role="form" class="wpcf7" id="wpcf7-f75-p344-o2" lang="en-US" dir="ltr">
+                                                <div class="screen-reader-response"></div>
+                                                <form action="/layout1/#wpcf7-f75-p344-o2" method="post" class="wpcf7-form" novalidate="novalidate">
+                                                    <div class="col-sm-12 col-xs-12 first">
+                                                        <label style="font-family: Arial;">Ваше имя</label>
+                                                        <br />
+                                                        <span class="wpcf7-form-control-wrap text-657">
+                                                            <input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Ваше имя" />
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-sm-12 col-xs-12 second">
+                                                        <label style="font-family: Arial;">Ваш телефон</label>
+                                                        <br />
+                                                        <span class="wpcf7-form-control-wrap tel-158">
+                                                            <input type="tel" name="your-phone" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel" aria-required="true" aria-invalid="false" placeholder="Ваш телефон" />
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-sm-12 col-xs-12 first">
+                                                        <label style="font-family: Arial;">Как мы можем помочь?</label>
+                                                        <br /> <span class="wpcf7-form-control-wrap menu-971">
+                                                            <textarea name="your-message" class="wpcf7-form-control wpcf7-text " aria-required="true" aria-invalid="false" placeholder=""></textarea>
+                                                        </span>
+                                                    </div>
+                                                    <div class="col-sm-12 col-xs-12">
+                                                        <div class="cf7-submit-btn-push">
+                                                            <input type="submit" id="SendButton" value="Отправить" style="font-family: Arial;" class="wpcf7-form-control wpcf7-submit" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="wpcf7-response-output wpcf7-display-none"></div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="vc_row-full-width vc_clearfix"></div>
+            @*<div class="row row-fluid vc_custom_1484444829892">
+                <div class="col-sm-12">
+                    <div class="vc_column-inner ">
+                        <div class="wpb_wrapper">
+                            <h2 class="construction-custom-heading fancy_heading_top" style="font-size: 25px;color: #212121;font-weight: 100;text-align: center;text-transform: uppercase;">Our Clients</h2>
+                            <h2 class="construction-custom-heading fancy_heading_bottom" style="font-size: 50px;color: #212121;text-align: center;text-transform: uppercase;">What They Say</h2>
+                            <div class="testimonials-carousel-wrapper">
+                                <div class="testimonials-carousel row">
+                                    <div class="testimonial-carousel-item">
+                                        <div class="testimonial">
+                                            <div class="testimonial-img"><img width="250" height="250" src="/wp-content/uploads/2017/01/staffmember-4-250x250.jpg" class="attachment-construction-image-250x250-cropped size-construction-image-250x250-cropped wp-post-image" alt="" srcset="/wp-content/uploads/2017/01/staffmember-4-250x250.jpg 250w, /wp-content/uploads/2017/01/staffmember-4-150x150.jpg 150w, /wp-content/uploads/2017/01/staffmember-4-300x300.jpg 300w, /wp-content/uploads/2017/01/staffmember-4-180x180.jpg 180w, /wp-content/uploads/2017/01/staffmember-4.jpg 500w" sizes="(max-width: 250px) 100vw, 250px" /></div>
+                                            <div class="testimonial-inner">
+                                                <div class="testimonial-name">Sarah Brandfield</div>
+                                                <div class="testimonial-company">Vive Building Co.</div>
+                                                <div class="testimonial-excerpt">
+                                                    <p>Quare obscurentur etiam haec, quae secundum naturam esse dicimus, in vita beata; An ea, quae per vinitorem antea consequebatur, per se ipsa curabit? Ut in geometria, prima si dederis, danda sunt omnia. An tu me de L. Quid ait Aristoteles reliquique Platonis alumni? Polycratem Samium felicem appellabant.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="testimonial-carousel-item">
+                                        <div class="testimonial">
+                                            <div class="testimonial-img"><img width="250" height="250" src="/wp-content/uploads/2017/01/project-2-250x250.jpg" class="attachment-construction-image-250x250-cropped size-construction-image-250x250-cropped wp-post-image" alt="" srcset="/wp-content/uploads/2017/01/project-2-250x250.jpg 250w, /wp-content/uploads/2017/01/project-2-150x150.jpg 150w, /wp-content/uploads/2017/01/project-2-180x180.jpg 180w, /wp-content/uploads/2017/01/project-2-300x300.jpg 300w, /wp-content/uploads/2017/01/project-2-600x600.jpg 600w, /wp-content/uploads/2017/01/project-2-500x500.jpg 500w" sizes="(max-width: 250px) 100vw, 250px" /></div>
+                                            <div class="testimonial-inner">
+                                                <div class="testimonial-name">Melanie Ledger</div>
+                                                <div class="testimonial-company">Bellrose Accounting</div>
+                                                <div class="testimonial-excerpt">
+                                                    <p>Quare obscurentur etiam haec, quae secundum naturam esse dicimus, in vita beata; An ea, quae per vinitorem antea consequebatur, per se ipsa curabit? Ut in geometria, prima si dederis, danda sunt omnia. An tu me de L. Quid ait Aristoteles reliquique Platonis alumni? Polycratem Samium felicem appellabant.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="testimonial-carousel-item">
+                                        <div class="testimonial">
+                                            <div class="testimonial-img"><img width="250" height="250" src="/wp-content/uploads/2017/01/service-construction-250x250.jpg" class="attachment-construction-image-250x250-cropped size-construction-image-250x250-cropped wp-post-image" alt="" srcset="/wp-content/uploads/2017/01/service-construction-250x250.jpg 250w, /wp-content/uploads/2017/01/service-construction-150x150.jpg 150w, /wp-content/uploads/2017/01/service-construction-180x180.jpg 180w, /wp-content/uploads/2017/01/service-construction-300x300.jpg 300w, /wp-content/uploads/2017/01/service-construction-600x600.jpg 600w, /wp-content/uploads/2017/01/service-construction-500x500.jpg 500w" sizes="(max-width: 250px) 100vw, 250px" /></div>
+                                            <div class="testimonial-inner">
+                                                <div class="testimonial-name">Michael Prescott</div>
+                                                <div class="testimonial-company">WestField Surgery Clinic</div>
+                                                <div class="testimonial-excerpt">
+                                                    <p>Quare obscurentur etiam haec, quae secundum naturam esse dicimus, in vita beata; An ea, quae per vinitorem antea consequebatur, per se ipsa curabit? Ut in geometria, prima si dederis, danda sunt omnia. An tu me de L. Quid ait Aristoteles reliquique Platonis alumni? Polycratem Samium felicem appellabant.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="testimonial-carousel-item">
+                                        <div class="testimonial">
+                                            <div class="testimonial-img"><img width="250" height="250" src="/wp-content/uploads/2017/01/service-building-250x250.jpg" class="attachment-construction-image-250x250-cropped size-construction-image-250x250-cropped wp-post-image" alt="" srcset="/wp-content/uploads/2017/01/service-building-250x250.jpg 250w, /wp-content/uploads/2017/01/service-building-150x150.jpg 150w, /wp-content/uploads/2017/01/service-building-180x180.jpg 180w, /wp-content/uploads/2017/01/service-building-300x300.jpg 300w, /wp-content/uploads/2017/01/service-building-600x600.jpg 600w, /wp-content/uploads/2017/01/service-building-500x500.jpg 500w" sizes="(max-width: 250px) 100vw, 250px" /></div>
+                                            <div class="testimonial-inner">
+                                                <div class="testimonial-name">Joseph Leith</div>
+                                                <div class="testimonial-company">Broadway Pizza</div>
+                                                <div class="testimonial-excerpt">
+                                                    <p>Quare obscurentur etiam haec, quae secundum naturam esse dicimus, in vita beata; An ea, quae per vinitorem antea consequebatur, per se ipsa curabit? Ut in geometria, prima si dederis, danda sunt omnia. An tu me de L. Quid ait Aristoteles reliquique Platonis alumni? Polycratem Samium felicem appellabant.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <span class="next_5afe6db2bc8ce slick-arrow-right"><i class="icon-arrow-right"></i></span> <span class="prev_5afe6db2bc893 slick-arrow-left"><i class="icon-arrow-left"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-vc-full-width="true" data-vc-full-width-init="false" class="row row-fluid vc_custom_1484444758209 row-has-fill">
+                <div class="col-sm-12">
+                    <div class="vc_column-inner ">
+                        <div class="wpb_wrapper">
+                            <h2 class="construction-custom-heading fancy_heading_top" style="font-size: 25px;color: #212121;font-weight: 100;text-align: center;text-transform: uppercase;">Read Our</h2>
+                            <h2 class="construction-custom-heading fancy_heading_bottom" style="font-size: 50px;color: #212121;text-align: center;text-transform: uppercase;">Recent News</h2>
+                            <div class="row blog-grid">
+                                <div class="col-sm-4 col-xs-12">
+                                    <figure class="blog-grid-figure">
+                                        <div class="blog-grid-img"><img width="350" height="250" src="/wp-content/uploads/2017/01/blogfeatured-3-350x250.jpg" class="attachment-construction-image-350x250-cropped size-construction-image-350x250-cropped wp-post-image" alt="" /></div>
+                                        <figcaption>
+                                            <div class="blog-grid-figcaption">Jan 01, 2017</div>
+                                            <div class="blog-grid-categories">Published in <a href="/category/building/">Building</a>, <a href="/category/construction/">Construction</a>, <a href="/category/uncategorized/">Uncategorized</a></div>
+                                        </figcaption>
+                                    </figure>
+                                    <a class="blog-grid-bottom" href="/how-the-building-process-works-with-us/">
+                                        <div class="blog-grid-title">How the Building Process Works With Us</div>
+                                    </a>
+                                    <div class="blog-grid-excerpt">
+                                        <p>Maecenas dictum fringilla leo eu lobortis. Morbi auctor metus risus, non dignissim massa tincidunt eget. Proin scelerisque sapien erat, dignissim blandit quam sempe.</p>
+                                    </div> <a class="blog-grid-readmore" href="/how-the-building-process-works-with-us/">Read More</a>
+                                </div>
+                                <div class="col-sm-4 col-xs-12">
+                                    <figure class="blog-grid-figure">
+                                        <div class="blog-grid-img"><img width="350" height="250" src="/wp-content/uploads/2017/01/blogfeatured-2-350x250.jpg" class="attachment-construction-image-350x250-cropped size-construction-image-350x250-cropped wp-post-image" alt="" /></div>
+                                        <figcaption>
+                                            <div class="blog-grid-figcaption"></div>
+                                            <div class="blog-grid-categories">Published in <a href="/category/construction/">Construction</a>, <a href="/category/uncategorized/">Uncategorized</a></div>
+                                        </figcaption>
+                                    </figure>
+                                    <a class="blog-grid-bottom" href="/starting-a-career-at-our-construction-company/">
+                                        <div class="blog-grid-title">Starting a Career at our Construction Company</div>
+                                    </a>
+                                    <div class="blog-grid-excerpt">
+                                        <p>Maecenas dictum fringilla leo eu lobortis. Morbi auctor metus risus, non dignissim massa tincidunt eget. Proin scelerisque sapien erat, dignissim blandit qua.</p>
+                                    </div> <a class="blog-grid-readmore" href="/starting-a-career-at-our-construction-company/">Read More</a>
+                                </div>
+                                <div class="col-sm-4 col-xs-12">
+                                    <figure class="blog-grid-figure">
+                                        <div class="blog-grid-img"><img width="350" height="250" src="/wp-content/uploads/2017/01/blogfeatured-1-350x250.jpg" class="attachment-construction-image-350x250-cropped size-construction-image-350x250-cropped wp-post-image" alt="" /></div>
+                                        <figcaption>
+                                            <div class="blog-grid-figcaption"></div>
+                                            <div class="blog-grid-categories">Published in <a href="/category/construction/">Construction</a>, <a href="/category/hard-labour/">Hard Labour</a>, <a href="/category/uncategorized/">Uncategorized</a></div>
+                                        </figcaption>
+                                    </figure>
+                                    <a class="blog-grid-bottom" href="/10-years-hard-labour-in-construction/">
+                                        <div class="blog-grid-title">10 Years Hard Labour in Construction</div>
+                                    </a>
+                                    <div class="blog-grid-excerpt">
+                                        <p>Maecenas dictum fringilla leo eu lobortis. Morbi auctor metus risus, non dignissim massa tincidunt eget. Proin scelerisque sapien erat, dignissim blandit quam se.</p>
+                                    </div> <a class="blog-grid-readmore" href="/10-years-hard-labour-in-construction/">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="vc_row-full-width vc_clearfix"></div>
+            <div class="page-comments"></div>*@
+        </div>
+    </div>
+</div>

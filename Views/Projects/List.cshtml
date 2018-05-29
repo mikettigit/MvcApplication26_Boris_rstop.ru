@@ -1,0 +1,72 @@
+﻿@using MvcApplication3.Models;
+@using MvcApplication20.Models
+
+@{
+    Layout = Request.IsAjaxRequest() ? null : "~/Views/Shared/_Layout.cshtml";
+    List<Post> Posts = (List<Post>)ViewData["Posts"];
+    Category Category = (Category)ViewData["Category"];
+}
+
+<div class="parallax-mirror" style="visibility: visible; z-index: -100; position: fixed; top: 0px; left: 0px; overflow: hidden; transform: translate3d(0px, 0px, 0px); height: 370px; width: 100%; ">
+    <div style="background-repeat: no-repeat; background-image: url('/wp-content/uploads/2017/01/home-bg-middle.jpg'); background-size: cover; background-position: center center; width: 100%; height: 100%;"></div>
+</div>
+<div class="parallax-window custom-page-header" data-parallax="scroll" data-speed="0.5" data-image-src="/wp-content/uploads/2017/01/diagnostics.jpg" style="padding-top: 280px;padding-bottom: 0px;">
+    <div class="container">
+        <div class="page-header-inner">
+            <div style="position: absolute; bottom: 70px;left: 0;">
+                <div class="breadcrumbs">
+                    <span property="itemListElement" typeof="ListItem">
+                        <a property="item" typeof="WebPage" title="Главная" href="/" class="home">
+                            <span property="name" style="font-family:Arial;">Главная</span>
+                        </a>
+                    </span>
+                    &gt;
+                    <span property="itemListElement" typeof="ListItem">
+                        <span property="name" style="font-family:Arial;">Наши работы</span>
+                    </span>
+                </div>
+            </div>
+            <h1 class="page-title" style="color: #ffffff; left: 0; font-family: Arial;">Наши работы</h1>
+        </div>
+    </div>
+</div>
+<div id="wrapper" style="background-color:white;">
+    <div class="page_content">
+        <div class="container">
+            <div class="row row-fluid vc_custom_1484444396695">
+                <div class="col-sm-12">
+                    <div class="vc_column-inner ">
+                        <div class="wpb_wrapper">
+                            <h2 class="construction-custom-heading fancy_heading_top" style="font-size: 15px;color: #111111;font-weight: 100;text-align: right;text-transform: uppercase; font-family: Arial;">Готовы добавить вашу задачу</h2>
+                            <h2 class="construction-custom-heading fancy_heading_bottom" style="font-size: 50px; color: #111111; text-align: right; text-transform: uppercase; font-family: Arial;">В наш список</h2>
+                            <div class="row vc_inner row-fluid">
+                                <div class="col-sm-12">
+                                    <div class="vc_column-inner ">
+                                        <div class="wpb_wrapper">
+                                            <div class="portfolioFilter">
+                                                <a href="#" class="current" style="font-family: Arial;">Все проекты</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12">
+                    <div class="vc_column-inner ">
+                        <div class="wpb_wrapper">
+                            <div class="projects row">
+                                @foreach (Post post in Posts)
+                                {
+                                    @Html.Raw(post.Description.Replace("href=\"#\"", "href=\"/Projects/Item/" + post.Id + "\""))
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

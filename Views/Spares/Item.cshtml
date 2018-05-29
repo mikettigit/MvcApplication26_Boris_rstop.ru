@@ -1,0 +1,77 @@
+﻿@using MvcApplication3.Models;
+@using MvcApplication20.Models
+
+@{
+    Layout = Request.IsAjaxRequest() ? null : "~/Views/Shared/_Layout.cshtml";
+    Post post = (Post)ViewData["Post"];
+    Category Category = (Category)ViewData["Category"];
+
+    string Img = "";
+    string Price = "";
+    System.Xml.XmlDocument doc = new System.Xml.XmlDocument();
+    doc.LoadXml("<doc>" + post.Description + "</doc>");
+    var nodes = doc.SelectNodes("//price");
+    if (nodes != null)
+    {
+        foreach (System.Xml.XmlElement node in nodes)
+        {
+            Price = node.InnerXml;
+        }
+    }
+    nodes = doc.SelectNodes("//img");
+    if (nodes != null)
+    {
+        foreach (System.Xml.XmlElement node in nodes)
+        {
+            Img = node.GetAttribute("src");
+        }
+    }
+}
+
+<div id="wrapper">
+    <div class="shop-page-title" style="background-image: none;">
+        <div class="container">
+            <div class="breadcrumbs">
+                <span property="itemListElement" typeof="ListItem">
+                    <a property="item" typeof="WebPage" title="" href="/" class="home">
+                        <span property="name" style="font-family:Arial;">Главная</span>
+                    </a>
+                </span> &gt;
+                <span property="itemListElement" typeof="ListItem">
+                    <a property="item" typeof="WebPage" title="" href="/Spares" class="home">
+                        <span property="name" style="font-family:Arial;">Запчасти</span>
+                    </a>
+                </span> &gt;
+                <span property="itemListElement" typeof="ListItem">
+                    <span property="name" style="font-family:Arial;">@post.Title</span>
+                </span>
+            </div>
+            <h1 class="page-title" style="font-family:Arial;">Запчасти</h1>
+        </div>
+    </div>
+    <div id="primary" class="content-area" style="margin-bottom:100px;">
+        <main id="main" class="site-main" role="main">
+            <div class="container"></div>
+            <div id="product-53" class="post-53 product type-product status-publish has-post-thumbnail product_cat-clothing product_cat-hoodies first instock shipping-taxable purchasable product-type-simple">
+                <div class="container">
+                    <div class="product-image-carousel-wrapper col-md-6 col-sm-12">
+                        <div class="product-image-carousel">
+                            <div class="product-image-carousel-item">
+                                <img width="1000" height="1000" src="@Img" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" sizes="(max-width: 1000px) 100vw, 1000px" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="summary entry-summary col-md-6 col-sm-12">
+                        <h1 class="product_title entry-title" style="font-family:Arial;">@post.Title</h1>
+                        <p class="price">
+                            <span class="woocommerce-Price-amount amount" style="font-family:Arial;">@Html.Raw(Price) руб.</span>
+                        </p>
+                        <div class="woocommerce-product-details__short-description" style="font-family:Arial;">
+                            @Html.Raw(post.Content)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>

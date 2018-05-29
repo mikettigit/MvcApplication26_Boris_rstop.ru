@@ -1,0 +1,100 @@
+﻿@using MvcApplication3.Models;
+@using MvcApplication20.Models;
+
+@{
+    Layout = Request.IsAjaxRequest() ? null : "~/Views/Shared/SparesLayout.cshtml";
+    List<Post> Posts = (List<Post>)ViewData["Posts"];
+    Category Category = (Category)ViewData["Category"];
+}
+
+<div id="wrapper">
+    <div class="shop-page-title" style="background-image: none;">
+        <div class="container">
+            <div class="breadcrumbs">
+                <span property="itemListElement" typeof="ListItem">
+                    <a property="item" typeof="WebPage" title="" href="/" class="home">
+                        <span property="name">Главная</span>
+                    </a>
+                </span> &gt; 
+                <span property="itemListElement" typeof="ListItem">
+                      <span property="name" style="font-family:Arial;">Запчасти</span>
+                </span>
+            </div>
+            <h1 class="page-title" style="font-family:Arial;">Запчасти</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="shop-archive right-sidebar">
+            <div id="secondary" class="widget-area sidebar">
+                <aside id="woocommerce_products-1" class="widget woocommerce widget_products">
+                    <h5 class="widget_title" style="font-family:Arial;">Разделы</h5>
+                    <ul class="product_list_widget">
+                        <li>
+                            <a href="/Spares">
+                                <span class="product-title">Все</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/Spares/List/Filters/">
+                                <span class="product-title">Фильтры</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/Spares/List/Oil/">
+                                <span class="product-title">Масло</span>
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+            <div class="content-area">
+                <div id="primary" class="content-area">
+                    <main id="main" class="site-main" role="main">
+                        <ul class="products columns-3">
+                            @{int ind = 1;
+                            foreach (Post post in Posts)
+                            {
+                                string Img = "";
+                                string Price = "";
+                                System.Xml.XmlDocument doc = new System.Xml.XmlDocument();
+                                doc.LoadXml("<doc>" + post.Description + "</doc>");
+                                var nodes = doc.SelectNodes("//price");
+                                if (nodes != null)
+                                {
+                                    foreach (System.Xml.XmlElement node in nodes)
+                                    {
+                                        Price = node.InnerXml;
+                                    }
+                                }
+                                nodes = doc.SelectNodes("//img");
+                                if (nodes != null)
+                                {
+                                    foreach (System.Xml.XmlElement node in nodes)
+                                    {
+                                        Img = node.GetAttribute("src");
+                                    }
+                                }
+                                
+                                <li class="post-70 product type-product status-publish has-post-thumbnail product_cat-posters instock sale shipping-taxable purchasable product-type-simple @((ind%3==0) ? "last" : "")">
+                                    <a href="/Spares/Item/@post.Id/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">
+                                        <img width="300" height="300" src="@Img" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" sizes="(max-width: 300px) 100vw, 300px" />
+                                        <h2 class="woocommerce-loop-product__title" style="font-family:Arial;">@post.Title</h2>
+                                        <span class="price">
+                                                <span class="woocommerce-Price-amount amount" style="font-family:Arial;">
+                                                    @Html.Raw(Price) руб.
+                                                </span>
+                                        </span>
+                                    </a>
+                                </li>
+                                
+                                ind++;
+                                
+                            }}
+                        </ul>
+                    </main>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>

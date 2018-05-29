@@ -1,0 +1,169 @@
+﻿@using MvcApplication3.Models;
+@using MvcApplication20.Models
+
+@{
+    Layout = Request.IsAjaxRequest() ? null : "~/Views/Shared/_Layout.cshtml";
+    Post Post = (Post)ViewData["Post"];
+    Category Category = (Category)ViewData["Category"];
+}
+
+@*<div class="content_body">
+    <div class="OnlyText article">     
+        <h2 style="padding-top:20px;">@Post.Title</h2>
+        <div class="n_body">
+            <div class="n_title">
+                <span class="n_date">@Post.Date.ToString("dd.MM.yyyy")</span>
+            </div>
+            <p>
+                @Html.Raw(Post.Content)
+            </p>
+            <div class="clear"></div>
+            <a href="/Blog" class="more"><< вернуться к списку</a>
+        </div>
+    </div>
+</div>
+<div class="clearfix" style="margin-bottom:20px;"></div>*@
+
+<div class="parallax-mirror" style="visibility: visible; z-index: -100; position: fixed; top: 0px; left: 0px; overflow: hidden; transform: translate3d(0px, 0px, 0px); height: 370px; width: 100%; ">
+    <div style="background-repeat: no-repeat; background-image: url('/wp-content/uploads/2017/01/home-bg-middle.jpg'); background-size: cover; background-position: center center; width: 100%; height: 100%;"></div>
+</div>
+<div class="parallax-window custom-page-header" data-parallax="scroll" data-speed="0.5" data-image-src="/wp-content/uploads/2017/01/diagnostics.jpg" style="padding-top: 280px;padding-bottom: 0px;">
+    <div class="container">
+        <div class="page-header-inner">
+            <div style="position: absolute; bottom: 70px;left: 0;">
+                <div class="breadcrumbs">
+                    <span property="itemListElement" typeof="ListItem">
+                        <a property="item" typeof="WebPage" title="Главная" href="/" class="home">
+                            <span property="name" style="font-family:Arial;">Главная</span>
+                        </a>
+                    </span>
+                    &gt;
+                    <span property="itemListElement" typeof="ListItem">
+                        <span property="name" style="font-family:Arial;">Наши работы</span>
+                    </span>
+                </div>
+            </div>
+            <h1 class="page-title" style="color: #ffffff; left: 0; font-family: Arial;">Наши работы</h1>
+        </div>
+    </div>
+</div>
+<div id="wrapper" style="background-color:white;">
+    <div class="page_content">
+        
+        @Html.Raw(Post.Content)
+        
+        @*<div class="container">
+        <div class="row row-fluid vc_custom_1484444396695" style="margin-bottom: 50px !important;">
+            <div class="col-sm-12">
+                <div class="vc_column-inner ">
+                    <div class="wpb_wrapper" style="font-family:Arial;">
+                        <h2 class="construction-custom-heading fancy_heading_top" style="font-size: 15px;color: #222222;letter-spacing: -0.6px;font-weight: 100;text-transform: uppercase; font-family:Arial;">Гатчина</h2>
+                        <h2 class="construction-custom-heading fancy_heading_bottom" style="font-size: 50px; color: #222222; letter-spacing: -0.6px; text-transform: uppercase; font-family: Arial;">Ремонт крепления штифта</h2>
+                        <div class="row vc_inner row-fluid">
+                            <div class="col-sm-4">
+                                <div class="vc_column-inner ">
+                                    <div class="wpb_wrapper">
+                                        <div class="featured-box">
+                                            <figure class="featured-box-figure">
+                                                <div class="featured-box-image">
+                                                    <iframe width="360" height="188" style="max-width: 100%; height: auto;" src="https://www.youtube.com/embed/bDO03IgJ_e8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                                </div>
+                                            </figure>
+                                            <div class="featured-box-title" style="font-family:Arial;">Проблема</div>
+                                            <div class="featured-box-text" style="font-family:Arial;">Разрыв крепления штифта стрелы экскаватора John Deere 410.</div>
+                                        </div>
+                                        <div class="create-space" id="CreateSpace_5afe7d4b0c035"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="vc_column-inner ">
+                                    <div class="wpb_wrapper">
+                                        <div class="featured-box">
+                                            <figure class="featured-box-figure">
+                                                <div class="featured-box-image"><img width="360" height="188" src="/wp-content/uploads/2017/01/project1_process.png" class="attachment-360x250 size-360x250" alt="" /></div>
+                                            </figure>
+                                            <div class="featured-box-title" style="font-family:Arial;">Ремонт</div>
+                                            <div class="featured-box-text" style="font-family:Arial;">Сварка, врезка отсутствующих участков конструкции, усиление.</div>
+                                        </div>
+                                        <div class="create-space" id="CreateSpace_5afe7d4b0c79c"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="vc_column-inner ">
+                                    <div class="wpb_wrapper">
+                                        <div class="featured-box">
+                                            <figure class="featured-box-figure">
+                                                <div class="featured-box-image"><img width="360" height="188" src="/wp-content/uploads/2017/01/project1_result.png" class="attachment-360x250 size-360x250" alt="" /></div>
+                                            </figure>
+                                            <div class="featured-box-title" style="font-family:Arial;">Результат</div>
+                                            <div class="featured-box-text" style="font-family:Arial;">Геометрия и функциональность узла полностью восстановлена. Далее силами заказчика будет произведена антикоррозийная защита и окраска.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-fluid vc_custom_1484271396574">
+                <div class="col-sm-12">
+                    <div class="vc_column-inner ">
+                        <div class="wpb_wrapper">
+                            <h2 class="construction-custom-heading fancy_heading_top" style="font-size: 25px;color: #222222;letter-spacing: -0.6px;font-weight: 100;text-align: right;text-transform: uppercase; font-family: Arial;">Заказ</h2>
+                            <h2 class="construction-custom-heading fancy_heading_bottom" style="font-size: 40px;color: #222222;letter-spacing: -0.6px;text-align: right;text-transform: uppercase; font-family: Arial;">Параметры</h2>
+                            <div class="create-space" id="CreateSpace_5afe7d4b0d70a"></div>
+                            <div class="row vc_inner row-fluid" style="margin: 70px 0;">
+                                <div class="col-sm-4">
+                                    <div class="vc_column-inner ">
+                                        <div class="wpb_wrapper">
+                                            <div class="icon-box medium square left-align icon-left bg-disabled">
+                                                <div class="icon-box-icon"><i style="margin-top: 2px" class="fa fa-pencil"></i></div>
+                                                <div class="icon-box-title" style="font-family:Arial;">Цена</div>
+                                                <div class="icon-box-text" style="font-family:Arial;">26 тыс. рублей</div>
+                                            </div>
+                                            <div class="create-space" id="CreateSpace_5afe7d4b0de5b"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="vc_column-inner ">
+                                        <div class="wpb_wrapper">
+                                            <div class="icon-box medium square left-align icon-left bg-disabled">
+                                                <div class="icon-box-icon"><i style="margin-top: 2px" class="fa fa-university"></i></div>
+                                                <div class="icon-box-title" style="font-family:Arial;">Гарантии</div>
+                                                <div class="icon-box-text" style="font-family:Arial;">1 год на сварочные работы.</div>
+                                            </div>
+                                            <div class="create-space" id="CreateSpace_5afe7d4b0e197"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="vc_column-inner ">
+                                        <div class="wpb_wrapper">
+                                            <div class="icon-box medium square left-align icon-left bg-disabled">
+                                                <div class="icon-box-icon"><i style="margin-top: 2px" class="fa fa-calendar"></i></div>
+                                                <div class="icon-box-title" style="font-family:Arial;">Время</div>
+                                                <div class="icon-box-text" style="font-family:Arial;">8 часов, 16 часов с момента получения заказа.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="create-space" id="CreateSpace_5afe7d4b0e52e"></div>
+                            <h2 class="construction-custom-heading fancy_heading_top" style="font-size: 25px; color: #222222; letter-spacing: -0.6px; font-weight: 100; text-transform: uppercase; font-family: Arial;">Дальнейшая судьба</h2>
+                            <h2 class="construction-custom-heading fancy_heading_bottom" style="font-size: 40px; color: #222222; letter-spacing: -0.6px; text-transform: uppercase; font-family: Arial;">История проекта</h2>
+                            <div class="wpb_text_column wpb_content_element ">
+                                <div class="wpb_wrapper">
+                                    <p style="font-family:Arial; text-align:justify;">Часто мы отслеживаем судьбу техники, которая прошла ремонт у нас. В данном случае узел отработал без нареканий весь гарантийный срок и на текущий момент, по словам заказчика, продолжает функционировать без дополнительных ремонтных работ уже у нового владельца из Республики Беларусь.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>*@
+    </div>
+</div>
