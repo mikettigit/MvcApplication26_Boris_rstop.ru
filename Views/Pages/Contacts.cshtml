@@ -1,4 +1,7 @@
-﻿
+﻿@using MvcApplication20.Models
+@{
+    DataModel Dm = Model as DataModel;
+}
 <div class="parallax-mirror" style="visibility: visible; z-index: -100; position: fixed; top: 0px; left: 0px; overflow: hidden; transform: translate3d(0px, 0px, 0px); height: 370px; width: 100%; ">
     <div style="background-repeat: no-repeat; background-image: url('/wp-content/uploads/2017/01/home-large-bg1.jpg'); background-size: cover; background-position: center center; width: 100%; height: 100%;"></div>
 </div>
@@ -33,7 +36,7 @@
                                 В Санкт-Петербурге и Ленобласти
                             </h2>
                             <div class="row vc_inner row-fluid">
-                                <div class="col-sm-6">
+                                @*<div class="col-sm-6">
                                     <div class="vc_column-inner ">
                                         <div class="wpb_wrapper">
                                             <div class="wpb_text_column wpb_content_element ">
@@ -59,7 +62,8 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div>*@
+                                    @Html.Raw(Dm.GetItem("305").Content)
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="vc_column-inner">

@@ -19,7 +19,7 @@ namespace MvcApplication26_Boris.Controllers
             List<Post> posts = Dm.ParseList(xml).Take(3).ToList();
             ViewData["Projects"] = posts;
 
-            return View();
+            return View(Dm);
         }
 
         [AcceptVerbs(HttpVerbs.Post)]

@@ -1,4 +1,8 @@
-﻿<div class="footer">
+﻿@using MvcApplication20.Models
+@{
+    DataModel Dm = Model as DataModel;
+}
+<div class="footer">
     <div class="top-footer">
         <div class="container">
             <div class="row">
@@ -12,12 +16,13 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-6">
                     <aside id="text-1" class="widget widget_text">
-                        <h5 class="widget_title" style="font-family:Arial;">О нас</h5>
+                        @*<h5 class="widget_title" style="font-family:Arial;">О нас</h5>
                         <div class="textwidget" style="font-family:Arial;">
                             Квалифицированная выездная бригада со всем необходимым оборудованием для производства ремонтных работ. Работаем по Санкт-Петербургу и Ленобласти. Осуществляем диагностику и ремонт всех типов строительной и спецтехники, навесного оборудования, гидравлических систем и электрики.
                             <br>
                             <br> <img src="/wp-content/themes/construction/assets/img/logo/logo-light.png" class="has-retina" alt="logo">
-                        </div>
+                        </div>*@
+                        @Html.Raw(Dm.GetItem("308").Content)
                     </aside>
                 </div>
                 <div class="col-xs-12 col-sm-3">

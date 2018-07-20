@@ -47,7 +47,7 @@ namespace MvcApplication26_Boris.Controllers
             {
                 ViewData["Posts"] = posts;
                 ViewData["Category"] = category;
-                return View();
+                return View(Dm);
             }
         }
 
@@ -61,7 +61,7 @@ namespace MvcApplication26_Boris.Controllers
             ViewData["Post"] = post;
             ViewData["Category"] = category;
 
-            return View();
+            return View(Dm);
         }
 
     }
